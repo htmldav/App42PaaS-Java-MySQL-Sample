@@ -43,8 +43,9 @@ public class DBManager {
 			System.out.println("DBURL: " + dbUrl + " UserName: " + username
 					+ " Password: " + password + " Port: " + port + " DBName: "
 					+ dbName);
-			dataSource.setUrl("jdbc:mysql://" + dbUrl + ":" + port + "/"
-					+ dbName + "?autoReconnect=true");
+			// dataSource.setUrl("jdbc:mysql://" + dbUrl + ":" + port + "/"
+			// 		+ dbName + "?autoReconnect=true");
+			dataSource.setUrl("jdbc:mysql://172.24.2.1:8889/dd?autoReconnect=true");
 			dataSource.setUsername(username);
 			dataSource.setPassword(password);
 		} catch (Exception e) {
